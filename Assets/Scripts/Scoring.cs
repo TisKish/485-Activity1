@@ -10,8 +10,9 @@ public class Scoring : MonoBehaviour
 
     void Update()
     {
-
-        if (points == 0)
+        PlayerDamage.health += 5f;
+        
+        if (points <= 0)
         {
 
             scoreText.GetComponent<Text>().text = "Score: 0";
@@ -29,6 +30,12 @@ public class Scoring : MonoBehaviour
             scoreText.GetComponent<Text>().text = "Score: " + points;
 
         }
+
+        // if playerDamaged ()
+        // {
+        //     points = points - 5;
+            
+        // }
 
     }
 
