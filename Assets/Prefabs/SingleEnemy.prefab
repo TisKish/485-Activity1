@@ -340,7 +340,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: adbc78bcb2e5d487a8289252710a3bf7, type: 2}
+  - {fileID: 2100000, guid: c60f198b2f729d544a22e2861c1598d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -399,14 +399,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 4182345562583887254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 246cfdf0dfc124183b8255484ffc8832, type: 3}
+  m_Script: {fileID: 11500000, guid: 38f6becb79e65024fa6564ec5f664ba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  obstacleRange: 5
-  damage: 1
-  maxAngle: 45
-  maxRadius: 10
+  health: 3
+  maxHealth: 3
+  slider: {fileID: 4182345561922859046}
+  healthBarUI: {fileID: 4182345562646964094}
+  materials:
+  - {fileID: 2100000, guid: c60f198b2f729d544a22e2861c1598d8, type: 2}
+  - {fileID: 2100000, guid: 55616f637a9c1a04d8c1a0aaa1017ca6, type: 2}
+  - {fileID: 2100000, guid: 1f0fe15fd2011f6418732a1b3a50b21d, type: 2}
+  - {fileID: 2100000, guid: 940f59311c2495540bb63e6c72981030, type: 2}
 --- !u!114 &4182345562583887257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,18 +420,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4182345562583887254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 041ffb7c683b840f98c9d817cabf8da1, type: 3}
+  m_Script: {fileID: 11500000, guid: 947c7b2644cf22b4fb8ff87f12aa46ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  maxHealth: 3
-  slider: {fileID: 4182345561922859046}
-  healthBarUI: {fileID: 4182345562646964094}
-  materials:
-  - {fileID: 2100000, guid: adbc78bcb2e5d487a8289252710a3bf7, type: 2}
-  - {fileID: 2100000, guid: 515e705a93658424ea2b904ed0ad0ad2, type: 2}
-  - {fileID: 2100000, guid: 1fcb4dc7d116b4312a8ebef3f659889f, type: 2}
-  - {fileID: 2100000, guid: db3891e08fcd442a7bb9068a7c391644, type: 2}
+  speed: 3
+  obstacleRange: 2
+  damage: 1
+  maxAngle: 45
+  maxRadius: 10
 --- !u!114 &2753317875921131140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4182345562583887254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8be0b67d5c514877b095a2f5533dcc4, type: 3}
+  m_Script: {fileID: 11500000, guid: a34a6e83fd31f0e41af527e563afddde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxAngle: 45
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4182345562583887254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63cead86850024926b02987a11b86d83, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b6a52cfe5b55334e95d62ee7ed43770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4182345562646964094
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4182345562646964094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd9af7ff50ef409f9c153012b924a7d, type: 3}
+  m_Script: {fileID: 11500000, guid: 74673611220997f48853c95a1526780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myCamera: {fileID: 0}

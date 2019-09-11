@@ -75,7 +75,7 @@ public class ReactiveTarget : MonoBehaviour
 
         yield return new WaitForSeconds(1.5f);
 
-        ScoreManager.score += 1;
+        Scoring.points++;
 
         Destroy(this.gameObject);
     }
