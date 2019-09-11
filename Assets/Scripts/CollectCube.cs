@@ -11,7 +11,7 @@ public class CollectCube : MonoBehaviour
     {
 
         collectSound.Play();
-        Scoring.points += 1;
+        Scoring.points += 25;
         Destroy(gameObject);
 
     }

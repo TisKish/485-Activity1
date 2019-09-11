@@ -14,19 +14,19 @@ public class Scoring : MonoBehaviour
         if (points == 0)
         {
 
-            scoreText.GetComponent<Text>().text = "";
+            scoreText.GetComponent<Text>().text = "Score: 0";
 
         }
         else if (points == 1)
         {
 
-            scoreText.GetComponent<Text>().text = points + " Cube";
+            scoreText.GetComponent<Text>().text = "Score: " + points;
 
         }
         else
         {
 
-            scoreText.GetComponent<Text>().text = points + " Cubes";
+            scoreText.GetComponent<Text>().text = "Score: " + points;
 
         }
 
